@@ -15,7 +15,6 @@ const LoginScreen = () => {
             <Text>Senha</Text>
             <TextInput value={senha} onChangeText={setSenha} secureTextEntry />
             <Button title="Entrar" onPress={() =>navegacao.navigate('Login')} />
-            <View style={styles.buttonSpacing} />
             <Button title="Voltar" onPress={() =>navegacao.navigate('Home')} />
         </View>
     );
@@ -28,9 +27,6 @@ const style =  StyleSheet.create({
         alignItems: 'center',
         justifyContent:'center',
         paddingBottom: 10,
-    },
-    buttonSpacing: {
-        marginBottom: 10, // Espaço entre os botões
     }
 });
 
